@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Suzuki</title>
+  <meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="Suzuki.svg.png" alt="">
+    </a>
+    <nav class="navbar">
+      <a href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#Bikes">Bikes</a>
+      <a href="#Showroom">Showroom</a>
+      <a href="#Question">Question</a>
+    </nav>
+  </header>
+  <section class="Home" id="Home">
+    <h2 class="heading">
+      Home
+    </h2>
+    <img src="title1.jpg">
+    </div>
+  </section>
+  <section class="About" id="About">
+    <h1 class="heading">
+      About Us  
+    </h1>
+    <div class="row">
+      <div class="content">
+        <p>In Japan, Suzuki is the fourth largest automobile manufacturer in Japan, and Suzuki's automobile product line is mainly known for small cars and small and medium-sized off-road vehicles called "light automatic cars" (K-Car) in Japan. In the international market, Suzuki Motorcycle is the third largest locomotive manufacturer in the world, and Suzuki Motor is the largest car brand in emerging market countries such as India and Southeast Asia, and is also the company before the American auto giant General Motors Group (GM) One of the partners owns several cars and off-road vehicles, which are shared with Chevrolet, one of GM's brands.</p>
+        <p>Suzuki Motors' investment in the Chinese market began in 1993 with Chongqing Changan Automobile Co., Ltd. (50% of the shares), Suzuki Corporation of Japan (40% of the shares), and Suzuki (China) Investment Co., Ltd. Established Changan Suzuki Automobile Co., Ltd., and then in June 1995, jointly invested and established Changhe Suzuki Automobile with Jiangxi Changhe Automobile, becoming the first Sino-foreign joint venture in Jiangxi Province. After a quarter of a century of operation, Suzuki finally established in 2018 In June 2019, it announced that it would completely withdraw from the Chinese market.</p>
+        <p>On September 5, 2018, Changan Automobile, Suzuki Corporation and Suzuki Investment Co., Ltd. reached an agreement to acquire 40% equity and 10% equity of Changan Suzuki held by Suzuki Corporation and Suzuki Corporation’s Chinese branch respectively at a price of 1 yuan. The announcement shows , Changan Suzuki's book value of total assets on April 30, 2018 was approximately RMB 4.53 billion, book value of total liabilities was approximately RMB 4.8 billion, and book value of net assets was approximately negative RMB 270 million</p>
+      </div>
+      <div class="image">
+        <img src="MotorOne.jpg" alt="">
+        <img src="MotorTwo.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="Bikes" id="Bikes">
+      <h1 class="heading">
+        Available Models
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <h2>Gixxer 250</h2>
+          <img src="1.jpg" alt="">
+          <h3>$124999</h3>
+          <button class="button1">Buy</button>
+        </div>
+        <div class="box">
+          <h2>Gixxer SF 250</h2>
+          <img src="2.jpg" alt="">
+          <h3>$138000</h3>
+          <button class="button1">Buy</button>
+        </div>
+        <div class="box">
+          <h2>Saluto 125</h2>
+          <img src="3.jpg" alt="">
+          <h3>$299999</h3>
+          <button class="button1">Buy</button>
+        </div>
+        <div class="box">
+          <h2>BURGMAN 200</h2>
+          <img src="4.jpg" alt="">
+          <h3>$86800</h3>
+          <button class="button1">Buy</button>
+        </div>
+        <div class="box">
+          <h2>GSX150 BANDIT</h2>
+          <img src="5.jpg" alt="">
+          <h3>$70800</h3>
+          <button class="button1">Buy</button>
+        </div>
+        <div class="box">
+          <h2>GSX - R150</h2>
+          <img src="6.jpg" alt="">
+          <h3>$138000</h3>
+          <button class="button1">Buy</button>
+        </div>
+        <div class="box">
+          <h2>GSX - S150</h2>
+          <img src="7.jpg" alt="">
+          <h3>$127999</h3>
+          <button class="button1">Buy</button>
+        </div>
+        <div class="box">
+          <h2>Swish 125</h2>
+          <img src="8.jpg" alt="">
+          <h3>$628000</h3>
+          <button class="button1">Buy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="Bikes" id="Showroom">
+    <h1 class="heading">
+      Showroom
+    </h1>
+    <div class="box-container">
+      <div class="box">
+        <h2>Zhonghe District</h2>
+        <img src="One.jpg" alt="">
+        <h3>Contact:(02)8978-0588</h3>
+      </div>
+      <div class="box">
+        <h2>Bade District</h2>
+        <img src="Two.jpg" alt="">
+        <h3>Contact:(03)369-0088</h3>
+      </div>
+      <div class="box">
+        <h2>Taoyuan District</h2>
+        <img src="Three.jpg" alt="">
+        <h3>Contact:(03)301-7722</h3>
+      </div>
+    </div>
+  </section>
+  <section class="Question" id="Question">
+    <h1 class="heading">
+      Question
+    </h1>
+    <div class="box-container">
+      <div class="box2">
+          <input id="credit-card-mask" type="text" maxlength="12" placeholder="input mask number 12 digits" autofocus/> 
+          <div id="result">
+              <div id="oninput-result" style="z-index:10;"></div>     
+          </div>        
+      </div>
+  </div>
+  <script type="text/javascript">
+      var input = document.getElementById('credit-card-mask'),oldValue,newValue,
+          difference = function(value1, value2) {
+          var output = [];
+          for(i = 0; i < value2.length; i++) {
+              if(value1[i] !== value2[i]) {
+              output.push(value2[i]);
+              }
+          }
+          return output.join("");
+          },
+          keyDownHandler = function(e) {
+          oldValue = input.value;
+          },
+          inputHandler = function(e) {
+          document.getElementById("oninput-result").innerHTML = '$'+input.value;
+          }
+      ;
+      input.addEventListener('keydown', keyDownHandler);
+      input.addEventListener('input', inputHandler);
+  </script>
+  </section>
+</body>
+</html>
